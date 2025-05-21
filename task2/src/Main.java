@@ -17,18 +17,73 @@ public class Main {
         double average = 0;
         double smallest = 0;
         //todo дописать логику программы ниже.
+              if (first > second && first > third) {
+                  greatest = first;
+              }else if (first < second && first > third) {
+                  average = first;
+              }else if (first > second && first < third) {
+                  average = first;
+              }else if (first < second && first < third) {
+                  smallest = first;
+              }
+              if (second > first && second > third) {
+                  greatest = second;
+              }else if (second < first && second > third) {
+                  average = second;
+              }else if (second > first && second < third) {
+                  average = second;
+              }else if (second < first && second < third) {
+                  smallest = second;
+              }
+              if (third > first && third > second) {
+                  greatest = third;
+              }else if (third < first && third > second) {
+                  average = third;
+              }else if (third > first && third < second) {
+                  average = third;
+              }else if (third < first && third < second) {
+                  smallest = third;
+              }
+//
+//        //todo
+
+        System.out.println("Наибольший вес:" + greatest);
+        System.out.println("Средний вес:" + average);
+        System.out.println("Наименьший вес:" + smallest);
+
+
+//        System.out.println("Наибольший вес: " + 10);
+//        System.out.println("Средний вес: " + 9);
+//        System.out.println("Наименьший вес: " + 1);
 
 
 
 
 
+//
+//        String s = first < second ? "t" : "f";
+//        String t = second < third ? "t" : "f";
+//        String f = third < first ? "t" : "f";
+//        String g = s + t + f;
+//
+//        if (g == "ttf"){
+//            greatest = first;
+//            average = second;
+//            smallest = third;
+//        }
+//        if (g == "tft"){
+//            greatest = third;
+//            average = first;
+//            smallest = second;
+//        }
+//        if (g == "ftt"){
+//            greatest = second;
+//            average = third;
+//            smallest = first;
+//        }
+//        System.out.println("Наибольший вес:" + greatest);
+//        System.out.println("Средний вес:" + average);
+//        System.out.println("Наименьший вес:" + smallest);
 
-
-        //todo
-
-
-        System.out.println("Наибольший вес: " + 10);
-        System.out.println("Средний вес: " + 9);
-        System.out.println("Наименьший вес: " + 1);
     }
 }
